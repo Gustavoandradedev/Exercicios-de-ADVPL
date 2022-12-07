@@ -1,0 +1,72 @@
+Github
+
+//Certifique-se de estar identificado no Git do seu computador(nome e email)
+git config --list
+git config --global user.name "Gustavo Yahoo"
+git config --global user.email "gustavo@hotmail.com"
+
+git init
+
+git remote add origin https://github.com/Gustav/teste-ss2.git
+//essa url é do diretorio criado no github, para sicronizar os arquivos.
+
+git branch -M main
+//Cria uma branch(galho) nova.
+
+git pull origin main
+//Atualiza seu repositório local em relação ao repositório remoto.
+ATENÇÃO: este comando só é necessário se vc criou o .gitignore pelo Github
+
+git status
+//Verifica o status dos arquivos. Irá aparecer os arquivos em vermelho.
+
+git add .
+//Adiciona todos arquivos ao stage.
+
+git status
+//Verifica o status dos arquivos. Irá aparecer os arquivos em verde.
+
+git commit -m "Primeiro commit"
+//Comente o que foi feito no projeto.Exemplo: Foi implementado a classe do Aluno.
+
+git push -u origin main 
+//Envia o repositório local para o repositório remoto.
+//Nota: nas próximas vezes basta fazer git push.
+
+-----------------------------------------------------------------------------
+
+ETAPA DE QUANDO SEU GIT JÁ ESTÁ CONFIGURADO
+
+git init
+
+git remote add origin https://github.com/Gust/dr-sds2.git
+//essa url é do diretorio criado no github, para sicronizar os arquivos.
+
+git branch -M main
+//Cria uma branch(galho) nova.
+
+git pull origin main
+//Atualiza seu repositório local em relação ao repositório remoto.
+ATENÇÃO: este comando só é necessário se vc criou o .gitignore pelo Github
+
+git status
+//Verifica o status dos arquivos. Irá aparecer os arquivos em vermelho.
+
+git add .
+//Adiciona todos arquivos ao stage.
+
+git status
+//Verifica o status dos arquivos. Irá aparecer os arquivos em verde.
+
+git commit -m "Primeiro commit"
+//Comente o que foi feito no projeto.Exemplo: Foi implementado a classe do Aluno.
+
+git push -u origin main 
+//Envia o repositório local para o repositório remoto.
+//Nota: nas próximas vezes basta fazer git push.
+
+
+Extra:
+
+git log --oneline
+//Listar histórico de commits
